@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>jsprojects</title>
         <style>
+
+            @media (max-width: 800px){
+                ul{
+                    flex-direction: column;
+                }
+            }
+
             body{
-                background-color: rgb(5, 23, 60);
+                background-color: rgb(255, 255, 255);
                 text-decoration: none;
                 color: white;
                 height: 100vh;
+                margin: 0px;
+                /* padding: 1% 0px; */
+                display: flex;
+                /* flex-direction: column; */
+                /* height: 100vh; */
+                /* width: 100%; */
             }
             div{
                 text-align: center;
-                height: 100%;
+                display: flex;
+                flex-direction: column;
+                /* height: 100vh; */
                 background-color: #b8282800;
-                margin: auto 0px;
+                margin: auto;
+                /* top: 50%; */
             }
+            
+            ul{
+                display: flex;
+                /* flex-direction: column; */
+                justify-content: space-evenly;
+                padding: 0px;
+                /* margin: auto; */
+            }
+
+            img{
+                width: 150px;
+            }
+
+            #i1{
+                width: 114px;
+                border: 2px solid lavender;
+                border-radius: 35px;
+                padding: 18px;
+                margin: 13px;
+            }
+
+            #i2{
+                width: 170px;
+                padding: 10px;
+            }
+
+            #i3{
+                width: 245px;
+            }
+
+            #i4{
+                width: 145px;
+                border-radius:45px;
+                padding: 17px;
+            }
+
+            p{
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+            }
+
             li{
                 text-decoration: none;
                 font-family: serif;
                 font-size: 25px;
                 list-style: none;
+                /* display: flex; */
             }
             a{
                 text-decoration: none;
-                color: white;
+                /* color: white; */
                 font-size: 100px;
+                font-size: 10px;
             }
         </style>
     </head>
     <body>
         <div>
             <ul>
-                <li><a href="https://chandankumarsrinivas.github.io/clock/">Clock</a></li>
-                <li><a href="https://chandankumarsrinivas.github.io/calculator/">Calculator</a></li>
-                <li><a href="https://chandankumarsrinivas.github.io/todolist/">Todo list</a></li>
+                <li><a href="https://chandankumarsrinivas.github.io/clock/"><img src="./images/clock.png" alt="clock" id="i1"></a></li>
+                <li><a href="https://chandankumarsrinivas.github.io/calculator/"><img src="./images/calculator-icon.jpg" alt="calculator" id="i2"></a></li>
+                <li><a href="https://chandankumarsrinivas.github.io/todolist/"><img src="./images/todo-list.png" alt="todo-list" id="i3"></a></li>
+                <li><a href="https://github.com/chandankumarsrinivas"><img src="./images/github-logo.png" alt="todo-list" id="i4"></a></li>
             </ul>
+            <li><p><br /> designed and built by <a href="https://github.com/ChandanKumarSrinivas">Chandan Kumar S</a></p></li>
         </div>
     </body>
 </html>
